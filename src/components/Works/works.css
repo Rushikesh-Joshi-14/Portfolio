@@ -1,0 +1,116 @@
+#works{
+    margin: 2rem auto;
+    min-height: calc(100vh-4rem);
+    width: 100vw;
+    max-width: 60rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+}
+.ProjectsText{
+    background: rgb(20,20,20);
+    margin-bottom: 2rem;
+    width:40vw;
+    max-width: 65rem;
+
+
+}
+
+.ProjectsText>p{
+    font-weight: 200;
+    font-size: 0.9rem;
+    margin-top: 0.2rem;
+}
+
+
+.workTitle{
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+.workDesc{
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0.9rem 0;
+    max-width: 50rem;
+}
+
+.workImages{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    max-width: 65rem;
+}
+.workImg{
+    object-fit: cover;
+    height: 19rem;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+.workImg:hover{
+    scale: 1.05;
+    box-shadow: 1px 1px 5px white;
+    
+}
+
+.workBtn{
+    margin: 3rem 0;
+    border: none;
+    border-radius: 20rem;
+    text-align: center;
+    background-color: #fff;
+    padding: 0.5rem 2.5rem; 
+    font-weight: 500;
+    cursor: pointer;
+}
+.workBtn:hover{
+    scale: 1.1;
+    background: yellow;
+}
+
+@media screen and (max-width:413px) {
+   #works{
+    margin: auto
+    
+   
+   }
+   .workTitle{
+    margin-left: 50vw;
+    width: 100vw;
+   }
+   .workDesc{
+    margin-left: 50vw;
+    width: 100vw;
+    margin-bottom: 5vh;
+   }
+
+   .ProjectsText{
+    width: 100vw;
+    max-width: 100vw;
+   }
+
+   .workBtn{
+  margin-left: 50vw;
+   }
+  
+}
+
+@media screen and (max-width:710px) {
+    #works{
+     margin-top: 10vh;
+     
+    
+    }
+    .ProjectsText{
+        width:85vw;
+        max-width: 100rem;
+    
+    
+    }
+    
+}

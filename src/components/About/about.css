@@ -1,0 +1,132 @@
+#about{
+    width: 100vw;
+    height: calc(100vh - 6rem);
+    max-width: 75rem;
+    margin: 0 auto;
+    /* overflow: hidden; */
+    position: relative;
+}
+
+.aboutContent{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    font-weight: 700;
+    /* align-items: center; */
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    font-size: 3rem;
+    
+    
+}
+.typed-cursor {
+    
+    display:none;
+    
+}
+
+
+.profileImg{
+    position: absolute;
+    top: -10vh;
+    right: -10vw;
+    z-index: -1;
+    height: 100vh;
+    object-fit: cover;
+    /* overflow:hidden ; */
+}
+.aboutText{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0.9rem 0;
+}
+
+.aboutName{
+    color: #ff914d;
+}
+
+.aboutRole{
+    font-size: 2rem;
+    color: #c7d000;
+    
+}
+.aboutPara{
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+.hireBTN{
+    background: #fff;
+    margin: 1rem 0;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+.hireBTN:hover{
+    scale: 1.1;
+    background: yellow;
+    
+}
+.hireImg{
+    object-fit: cover;
+    height: 1rem;
+    margin: 0 0.25rem;
+    
+}
+
+@media screen and (max-width:710px) {
+    .profileImg{
+        right: -22vw;
+        top: -17vh;
+    }
+    .aboutContent{
+        font-size: -5vw;
+        margin-top: 2vh;
+    }
+}
+@media screen and (max-width:600px) {
+    .profileImg{
+        right: -30vw;
+        top: -18vh;
+    }
+    .aboutContent{
+        font-size: -5vw;
+        margin-top: 6vh;
+    }
+}
+@media screen and (max-width:500px) {
+    .profileImg{
+        right: -55vw;
+        top: -22vh;
+    }
+    .aboutContent{
+        font-size: -5vw;
+        margin-top: 6vh;
+    }
+}
+@media screen and (max-width:413px) {
+    .profileImg{
+        /* right: -80vw; */
+        /* top: -21vh; */
+        top: -12vh;
+        object-fit: cover;
+        right: -60vw;
+        width: 100vw;
+        height: 90vh;
+        /* overflow-x: hidden; */
+    }
+    .aboutContent{
+        font-size: -20vw;
+        padding-top: 10vh;
+        margin-left: 13vw;
+        /* margin-left: 0vw; */
+    }
+    #about{
+        margin-bottom: -20vh;
+        
+    }
+
+   
+}
